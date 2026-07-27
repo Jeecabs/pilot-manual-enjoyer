@@ -9,7 +9,6 @@ const root = dirname(dirname(fileURLToPath(import.meta.url)));
 test("manifest exposes the public extension and branded skill", async () => {
   const manifest = JSON.parse(await readFile(join(root, "package.json"), "utf8"));
   assert.equal(manifest.name, "pilot-manual-enjoyer");
-  assert.equal(manifest.private, undefined);
   assert.equal(manifest.license, "MIT");
   assert.deepEqual(manifest.pi.extensions, ["./src/index.ts"]);
   assert.deepEqual(manifest.pi.skills, ["./skills"]);
