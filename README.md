@@ -1,6 +1,6 @@
 # Pilot Manual Enjoyer
 
-Private Pi package for clear technical writing. It combines an ASD-STE100-inspired writing skill with a deterministic prose linter.
+Pi package for clear technical writing. It combines an ASD-STE100-inspired writing skill with a deterministic prose linter.
 
 The package adapts the kit from [“The cure for AI slop is a 1986 aircraft manual”](https://github.com/woosal1337/blog/tree/main/videos/ep01-the-cure-for-ai-slop). It ports the linter to TypeScript and adds Pi tools, commands, source locations, compact rendering, and file safeguards.
 
@@ -27,11 +27,9 @@ This checker covers mechanical rules only. It cannot certify ASD-STE100 or make 
 
 ## Install
 
-The repository is private. Authenticate GitHub HTTPS access, then install it globally:
+Install the package globally from GitHub:
 
 ```bash
-gh auth login
-gh auth setup-git
 pi install https://github.com/Jeecabs/pilot-manual-enjoyer
 ```
 
@@ -90,6 +88,6 @@ pi -e ./src/index.ts
 
 ## Upstream and licensing
 
-The private wrapper code is unlicensed. Adapted upstream material remains MIT licensed under its original copyright.
+Pilot Manual Enjoyer is MIT licensed. Adapted upstream material remains MIT licensed under its original copyright.
 
 See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) and [`vendor/WOOSAL_BLOG_LICENSE.md`](vendor/WOOSAL_BLOG_LICENSE.md). The official ASD-STE100 specification is copyrighted and is not included. Obtain it from <https://asd-ste100.org>.

@@ -1,10 +1,9 @@
 {
   "name": "pilot-manual-enjoyer",
   "version": "0.1.0",
-  "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "type": "module",
-  "description": "Private Pi package for writing and linting clear technical prose with Simplified Technical English.",
+  "description": "Pi package for writing and linting clear technical prose with Simplified Technical English.",
   "keywords": [
     "pi-package",
     "pi-extension",
