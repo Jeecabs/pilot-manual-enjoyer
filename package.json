@@ -1,0 +1,56 @@
+{
+  "name": "pilot-manual-enjoyer",
+  "version": "0.1.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "description": "Private Pi package for writing and linting clear technical prose with Simplified Technical English.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "writing",
+    "simplified-technical-english"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jeecabs/pilot-manual-enjoyer.git"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "files": [
+    "src",
+    "skills",
+    "vendor",
+    "README.md",
+    "LICENSE.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types tests/*.test.ts",
+    "pack:check": "npm pack --dry-run",
+    "verify": "pnpm check && pnpm test && pnpm pack:check"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
+    "typebox": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.82.1",
+    "@earendil-works/pi-tui": "^0.82.1",
+    "@types/node": "^24.0.0",
+    "typebox": "^1.1.38",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.28.2"
+}

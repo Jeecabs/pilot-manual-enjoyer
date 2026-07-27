@@ -1,0 +1,4 @@
+node_modules/
+.fallow/
+*.tgz
+.DS_Store
